@@ -102,7 +102,7 @@ EqualButton.addEventListener("click", () => {
 })
 
 document.body.addEventListener("keyup", (e) => {
-    if (e.key === "Enter") {
+    if (e.key === "Enter" || e.key === "=") {
         if (currentInput === "" && display.value !== "") {
             secondNumber = display.value; // Grabbed the Second Number!
         }
